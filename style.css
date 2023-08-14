@@ -1,0 +1,803 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+#main {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+}
+#container{
+    height: 50vh;
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+#container #plan{
+    height: 50px;
+    width: 180px;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#container #plan:hover{
+    background: linear-gradient(rgb(184, 213, 246),white);
+    cursor: pointer;
+}
+#container #plan h1{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+#container #quick-book{
+    height: 50px;
+    width: 180px;
+    display: flex;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 240px;
+}
+#container #quick-book:hover{
+    background: linear-gradient(rgb(184, 213, 246),white);
+    cursor: pointer;
+}
+#container #quick-book h1{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+#container #heading h1{
+    position: absolute;
+    top:90px;
+    left: 60px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(245, 36, 74);
+}
+#container #station h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+}
+#container #station #stname{
+    height: 25px;
+    width: 200px;
+    position: absolute;
+    top: 138px;
+    left: 240px;
+}
+#container #destination h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 185px;
+    left: 100px;
+}
+#container #destination #dtname{
+    height: 25px;
+    width: 200px;
+    position: absolute;
+    top: 183px;
+    left: 240px;
+}
+#container #date h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 225px;
+    left: 100px;
+}
+#container #date #date{
+    height: 25px;
+    width: 200px;
+    position: absolute;
+    top: 223px;
+    left: 240px;
+}
+#container #ticket h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 265px;
+    left: 100px;
+}
+#container #ticket #type{
+    height: 25px;
+    width: 200px;
+    position: absolute;
+    top: 263px;
+    left: 240px;
+}
+#container #checkbox{
+    position: absolute;
+    top: 315px;
+    left: 140px;
+}
+#container #check h1{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    top: 313px;
+    left: 160px;
+}
+#container #submit{
+    height: 25px;
+    width: 100px;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+    left: 170px;
+}
+#container #submit h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#container #submit:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
+#container #reset{
+    height: 25px;
+    width: 100px;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+    left: 290px;
+}
+#container #reset h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#container #reset:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
+/* CSS LIST.HTML   */
+#main2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+#main2 #train-head{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#main2 #train-head h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#main2 #quota{
+    height: 5vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#main2 #quota h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#main2 table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+th{
+    background: linear-gradient(white,rgb(184, 213, 246));
+}
+
+
+/*    AVAILIBILITY.HTML    */
+
+#main3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+#main3 #heading3{
+    height: 5vh;
+    width: 100vw;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main3 #heading3 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#main3 table{
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+#main3 table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+th{
+    background: linear-gradient(white);
+}
+#main3 #heading4{
+    height: 5vh;
+    width: 100vw;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45vh;
+}
+#main3 #heading4 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#main3 #t2{
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+
+/*    BOOKNOW.HTML   */
+
+
+#main4{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+#main4 #journey-detail{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#main4 #journey-detail h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#container-1{
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+}
+#container-1 h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#container-1 input{
+    position: absolute;
+    top: 14vh;
+    left: 12vw;
+}
+#container-1 #in-contain{
+    position: absolute;
+    top:5vh;
+    left: 28vw;
+}
+#container-1 #in-contain h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#container-1 #in-contain1{
+    position: absolute;
+    top:5vh;
+    left: 58vw;
+}
+#container-1 #in-contain1 h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#main4 #pass-details{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+}
+#main4 #pass-details h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#main4 table{
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#main4 table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#main4 table input{
+    height: 5vh;
+}
+#main4 #child{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    top: 60vh;
+    border: 1px solid black;
+}
+#main4 #child h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#main4 #table2{
+    position: absolute;
+    top: 65vh;
+}
+#main4 #reset{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    top: 92vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main4 #reset #btn{
+    height: 4vh;
+    width: 5vw;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(white,rgb(184, 213, 246));
+}
+#main4 #reset #btn h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+}
+#main4 #reset #btn h1:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
+#main4 #submit{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    top: 102vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main4 #submit #sbt{
+    height: 4vh;
+    width: 5vw;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(white,rgb(184, 213, 246));
+}
+#main4 #submit #sbt h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+}
+#main4 #submit #sbt h1:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
+#upgrade{
+    height: 40vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 107vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#upgrade #up1{
+    height: 30vh;
+    width: 40vw;
+    background-color: rgba(223, 223, 223, 0.576);
+    margin: 2vh;
+}
+#upgrade #up1 #u1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u1 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up1 #u2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u2 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up1 #u3{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u3 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up1 #u4{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u4 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up1 #u5{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u5 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up1 #u6{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+#upgrade #up1 #u6 h1{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vh;
+    color: rgb(85, 229, 251);
+}
+#upgrade #up2{
+    height: 30vh;
+    width: 40vw;
+    background-color: rgba(223, 223, 223, 0.576);
+    margin: 2vh;   
+}
+#upgrade #up2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    color: red;
+    padding: 10px;
+}
+#captcha{
+    height: 12vw;
+    width: 20vw;
+    background-color: rgba(186, 186, 185, 0.472);
+    position: absolute;
+    top: 150vh;
+    left: 50vw;
+    transform: translate(-50%,0);
+}
+#captcha #cap1 {
+    height: 5vh;
+    width: 15vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#captcha #cap1 h1{
+    font-size: 3vh;
+}
+#captcha input{
+    height: 5vh;
+    width: 15vh;
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#captcha #submit{
+    height: 5vh;
+    width: 8vh;
+    position: absolute;
+    top: 18vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#captcha #submit h1{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TICKET.HTML  */
+
+#main5{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+#main5 #journey-detail1{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+}
+#main5 #journey-detail1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#container-11{
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+}
+#container-11 h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#container-11 input{
+    position: absolute;
+    top: 14vh;
+    left: 12vw;
+}
+#container-11 #in-contain1{
+    position: absolute;
+    top:5vh;
+    left: 28vw;
+}
+#container-11 #in-contain1 h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#container-11 #in-contain11{
+    position: absolute;
+    top:5vh;
+    left: 58vw;
+}
+#container-11 #in-contain11 h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    font-weight: 100;
+}
+#main5 #pass-details1{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+}
+#main5 #pass-details1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#main5 table{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#pass-details{
+    height: 25vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 40vh;
+}
+#pass-details #pdh{
+    height: 4vh;
+    width: 40vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+}
+#pass-details #pdh h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#pass-details h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+}
+#pass-details #fdh{
+    height: 4vh;
+    width: 40vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+    position: absolute;
+    right: 5vh;
+    top: 0.2vh;
+}
+#pass-details #fdh h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#sub-details{
+    height: 15vh;
+    width: 30vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 57vw;
+    top: 8vh;
+}
+#sub-details h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding: 0.5vh;
+}
+#rac{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    color: red;
+    position: absolute;
+    top: 65vh;
+}
+#main5 #payment-option{
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(130, 191, 245);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid black;
+    position: absolute;
+    top: 72vh;
+}
+#main5 #payment-option h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+} 
+#pay{
+    display: flex;
+    position: absolute;
+    top: 80vh;
+}
+#pay h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#make-payment{
+    height: 4vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    position: absolute;
+    top: 90vh;
+    left: 35vw;
+}
+#make-payment:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
+#make-payment h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#cancel-payment{
+    height: 4vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(white,rgb(184, 213, 246));
+    position: absolute;
+    top: 90vh;
+    left: 55vw;
+}
+#cancel-payment h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+#cancel-payment:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(184, 213, 246),white);
+}
